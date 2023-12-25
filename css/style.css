@@ -1,0 +1,48 @@
+#alertusername,#alertemail,#alertpass,#btnSignIn,#hideBtSignUp,#hideBtSignIn,#nav{
+    display: none;
+}
+
+:root{
+    --mainColor:#24353F;
+    --primaryColor:#17A2B8;
+}
+body{
+    background-color: var(--mainColor) !important;
+    color: #fff !important;
+}
+h2{
+    color: #17A2B8 !important;
+}
+input , textarea{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+input::placeholder{
+    color: #fff !important;
+}
+
+.btn{
+    background-color: transparent !important;
+    border: 1px solid var(--primaryColor) !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    color: var(--primaryColor) !important;
+}
+.btn:hover{
+    background-color: var(--primaryColor) !important;
+    color: #fff !important;
+}
+a{
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+a:hover{
+    color: #17A2B8 !important;
+}

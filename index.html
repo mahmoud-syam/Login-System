@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="icon/png" href="icon.jpg">
+    <title>LOGIN SYSTEM</title>
+</head>
+
+<body id="body">
+    <nav id="nav" class="navbar navbar-expand-lg ">
+        <div class="container ">
+            <a class="navbar-brand ms-5" href="#">Login System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+        <div class="collapse navbar-collapse navbar-nav ms-auto mb-2 mb-lg-0" id="navbarSupportedContent">
+            <button class="btn btn-outline-success" type="submit">LogOut</button>
+            
+        </div>
+        
+    </nav>
+    <div class="w-50 m-auto shadow-lg my-4 p-5 text-center">
+        <h2 class="text-center">Smart Login System </h2>
+        <input id="userName" type="text" class="form-control my-3" placeholder="Enter your Name">
+        <div class="alert alert-danger" id="alertusername">Invaild userName Input</div>
+        <input id="userEmail" type="text" class="form-control my-3" placeholder="Enter your Email">
+        <div class="alert alert-danger" id="alertemail">Invaild Email Input</div>
+        <input id="userPassword" type="password" class="form-control my-3" placeholder="Enter Your Password">
+        <div class="alert alert-danger" id="alertpass">Invaild password Input</div>
+
+        <button onclick="getValue()" id="btnSignUp" class="btn btn-primary m-auto">Sign Up</button>
+        <button id="btnSignIn" class="btn btn-primary m-auto">Sign In</button>
+        <div id="hideBtSignIn" class="my-2">You have an account? <a onclick="hideBtSignUp()"
+                class="text-decoration-none" href="">SignIn</a></div>
+        <div id="hideBtSignUp" class="my-2">Don’t have an account? <a onclick="hideBtSignIn()"
+                class="text-decoration-none" href="">Sign Up</a></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
